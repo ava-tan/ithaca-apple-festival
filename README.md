@@ -1,6 +1,6 @@
 # Project 3
 
-See the course web page for Project 2's requirements.
+See the course web page for the project's requirements.
 
 # Submission Instructions
 

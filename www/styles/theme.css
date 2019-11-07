@@ -1,0 +1,446 @@
+body{
+    background-color: #ffff;
+    font-family: Roboto, sans-serif;
+    color: #505050;
+    letter-spacing: .02em;
+    line-height: 1.5em;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+
+}
+@font-face{
+    /* Source: https://www.dafont.com/simply-rounded.font */
+    font-family: 'Simply Rounded';
+    src: url('../fonts/Simply-Rounded.ttf') format('truetype');
+}
+
+header{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    height: 9%;
+}
+p.logo{
+    font-size: 10px;
+    color: #ababab;
+}
+div.header{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+div.logo{
+    flex-grow: 1;
+
+}
+div.nav{
+    align-items: center;
+    flex-grow: 4;
+    margin-top: 50px;
+}
+nav{
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+nav ul li a{
+    color: #af322b;
+    letter-spacing: .1em;
+}
+
+nav a:link{
+    text-decoration: none;
+}
+nav a:hover{
+    color: #e8453c;
+    text-decoration: underline;
+}
+nav a:active{
+    color:#9e6a4f;
+}
+h1{
+    text-align: center;
+    font-family: 'Simply Rounded', Roboto, sans-serif;
+    color: #659a22;
+    letter-spacing: .15em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+h2{
+    color: #af322b;
+    font-family: 'Simply Rounded', Robot, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.vendors{
+    text-transform: none;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+h2.dates{
+    font-family: 'Simply Rounded', Roboto, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 35px;
+    color: #659a22;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+main{
+    /* Image Source: https://unsplash.com/photos/_5TGspSCIdw */
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 30px;
+
+}
+figure{
+    display:inline-block;
+    margin-left: 5px;
+}
+.download{
+    text-align: center;
+    border-width: 3px;
+    border-color: #659a22;
+}
+.apple-stand{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+figure.artist{
+    text-align:center;
+}
+div.about{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+div.what{
+    flex-direction: column;
+    flex-grow:2;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+div.content{
+    background-color: #ffffff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+}
+.commons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.food{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+.crafts{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.performances{
+    display: flex;
+    flex-direction: row;
+}
+.schedule{
+    flex-grow:2;
+    margin-right: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #659a22;
+    padding: 0px 10px 0px 10px;
+}
+.artist{
+    flex-grow:1;
+    padding: 10px;
+    margin: 0px;
+}
+.walking{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+.bus{
+    margin-left: 10px;
+}
+p{
+
+}
+.greeting{
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+.info{
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+p.schedule{
+    text-align: center;
+    border-style: none;
+}
+div.more-info{
+    display: flex;
+    flex-direction: row;
+    vertical-align:top;
+
+}
+div.when{
+    flex-grow:1;
+    vertical-align: middle;
+
+}
+div.where{
+    flex-grow:1;
+}
+img{
+    vertical-align: middle;
+}
+.icons{
+    display:inline-block;
+    margin-left: 5px;
+}
+.download{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.artist{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.icons{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h4.schedule{
+    text-align: center;
+    border-style: none;
+}
+h2.artist{
+    text-align: center;
+    border-style: none;
+}
+h2.schedule{
+    text-align:center;
+    border-style: none;
+    margin-bottom: 10px;
+}
+figcaption{
+    font-size:10px;
+}
+.map{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #659a22;
+}
+table{
+    table-layout: fixed;
+    width: 50%;
+}
+.performance{
+    width: 100%;
+    font-size: 14px;
+}
+th{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #af322b;
+}
+th, td{
+    padding: 5px;
+    text-align: center;
+}
+
+footer{
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+@media(max-width:900px){
+    main{
+        width: 90%;
+    }
+    nav{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    nav ul li{
+        display: inline-block;
+        margin: 0px 10px;
+    }
+    div.header{
+        width:90%;
+    }
+    h2.dates{
+        font-size: 25px;
+    }
+    div.about{
+        flex-direction: column;
+    }
+    div.more-info{
+        flex-direction: column;
+    }
+    img{
+        width:100%;
+    }
+    .icons{
+        width: 50px;
+    }
+    figure{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.content{
+        width: 90%;
+    }
+    div.commons{
+        display: flex;
+        flex-direction: column;
+    }
+    .food{
+        flex-direction:column;
+    }
+    .crafts{
+        flex-direction:column;
+    }
+    .performances{
+        flex-direction: column;
+    }
+    .walking{
+        flex-direction: column;
+    }
+    div.icons{
+        display:inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        display:inline-block;
+        margin-left: 5px;
+        padding: 5px;
+    }
+    table{
+        width:100%;
+    }
+}
+@media (max-width: 600px){
+    main{
+        font-size: 110%;
+        flex-direction: column;
+        width: 90%;
+    }
+    div.header{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+    div.nav{
+        margin-top: 10px;
+    }
+    nav ul{
+        padding:0px;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        font-size:90%;
+        margin-bottom: 5px;
+    }
+    h1{
+        line-height: 1.5em;
+    }
+    h2.dates{
+        font-size: 20px;
+    }
+    div.about{
+        flex-direction: column;
+    }
+    div.more-info{
+        flex-direction: column;
+    }
+    img{
+        width:100%;
+    }
+    .icons{
+        width: 50px;
+    }
+    img.logo{
+        width: 60%;
+    }
+    figure{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.content{
+    }
+    div.commons{
+        display: flex;
+        flex-direction: column;
+    }
+    .food{
+        flex-direction:column;
+    }
+    .crafts{
+        flex-direction:column;
+    }
+    .performances{
+        flex-direction: column;
+    }
+    .walking{
+        flex-direction: column;
+    }
+    div.icons{
+        display:inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        display:inline-block;
+        margin-left: 5px;
+        padding: 5px;
+    }
+    table{
+        width:100%;
+        font-size: 90%;
+    }
+
+}

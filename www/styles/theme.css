@@ -294,6 +294,118 @@ footer{
     text-align: center;
     font-size: 14px;
 }
+section{
+    width: 50%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+
+}
+h2.feedback{
+    display: inline-block;
+    color:#659a22;
+}
+label{
+    margin-top: 5px;
+    margin-right: 10px;
+
+}
+label.align {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+label.align-text{
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+.bold{
+    font-weight: bold;
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+div.checkbox{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.future-emails{
+    display: flex;
+    flex-direction: row;
+}
+div.rate-radio {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.future-emails{
+    margin-left: 20%;
+}
+.email-radio {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.email-radio input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.email-radio label {
+    margin-right: 40px;
+}
+.error_message {
+    display: flex;
+    padding-left: 5px;
+    font-size: 14px;
+    color: red;
+}
+.label-list{
+    display: flex;
+    flex-direction: row;
+}
+.hidden {
+    display: none;
+}
+.text-box{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    vertical-align: top;
+}
+div.textbox-align{
+    display: flex;
+    flex-direction: column;
+}
+.text-box label{
+    margin-right: 10px;
+}
+button {
+    margin: 10px 30% 0;
+    align-self: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #659a22;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: #659a22;
+    background-color: white;
+}
+
+button:hover {
+    color: white;
+    background-color: #659a22;
+    cursor: pointer;
+}
+
 @media(max-width:900px){
     main{
         width: 90%;
@@ -358,6 +470,9 @@ footer{
     }
     table{
         width:100%;
+    }
+    button {
+        margin: 10px 20% 0;
     }
 }
 @media (max-width: 600px){
@@ -442,5 +557,21 @@ footer{
         width:100%;
         font-size: 90%;
     }
-
+    div.long-text{
+        display: flex;
+        flex-direction: column;
+    }
+    div.text-box{
+        display: inline-block;
+        margin: 10px;
+        vertical-align: top;
+    }
+    label.align-text{
+        display: flex;
+        width: 500px;
+        margin-bottom: 10px;
+    }
+    button {
+        margin: 10px 10% 0;
+    }
 }

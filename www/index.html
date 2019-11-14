@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="styles/theme.css" media="all"/>
+    <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="scripts/validation.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -68,6 +70,110 @@
             <p>
             </div>
         </div>
+        <h2 class="feedback">Give Us Feedback!</h2>
+        <form id="feedbackForm" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+            <div class="label-list">
+                <label for="name" class="align bold">Name*:</label>
+                <div class="error-align">
+                    <input type="text" id="name" name="name" required>
+                    <span class="error_message hidden" id="nameError">
+                        *Must enter a valid name.
+                    </span>
+                </div>
+            </div>
+            <div class="label-list">
+                <label for="email" class="align bold">Email*:</label>
+                <div class="error-align">
+                    <input type="email" id="email" name="email" required>
+                    <span class="error_message hidden" id="emailError">
+                        *Must enter a valid email address.
+                    </span>
+                </div>
+            </div>
+            <div class="label-list">
+                <label class="align bold">Days Attended*:</label>
+                <div class="attended">
+                    <div class="checkbox">
+                        <input type="checkbox" id="friday" name="friday">
+                        <label for="friday">Friday</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="saturday" name="saturday"/>
+                        <label for="saturday">Saturday</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="sunday" name="sunday">
+                        <label for="sunday">Sunday</label>
+                    </div>
+                    <span class="error_message hidden" id="checkError">
+                        *Must check at least one day.
+                    </span>
+                </div>
+            </div>
+            <div class="label-list">
+                <label class="align bold">Rate your time at the festival*:</label>
+                <div class="rate">
+                    <div class="rate-radio">
+                        <input type="radio" id="great" name="rate" value="great" checked>
+                        <label for="great">Great!</label>
+                    </div>
+                    <div class="rate-radio">
+                        <input type="radio" id="good" name="rate" value="good">
+                        <label for="good">Good</label>
+                    </div>
+                    <div class="rate-radio">
+                        <input type="radio" id="okay" name="rate" value="okay">
+                        <label for="okay">Okay</label>
+                    </div>
+                    <div class="rate-radio">
+                        <input type="radio" id="bad" name="rate" value="bad">
+                        <label for="bad">Bad</label>
+                    </div>
+                    <div class="rate-radio">
+                        <input type="radio" id="terrible" name="rate" value="terrible">
+                        <label for="terrible">Terrible</label>
+                    </div>
+                </div>
+            </div>
+            <div class="long-text">
+                <div class="text-box">
+                    <label for="like" class="bold align-text">What did you like?</label>
+                    <div class="textbox-align">
+                        <textarea id="like" name="like" rows=5 cols="50" minlength="10" maxlength="500"></textarea>
+                        <span class="error_message hidden" id="likeError">*Please submit a response with 10 to 500 characters in length.
+                        </span>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <label for="dislike" class="bold align-text">What did you dislike?</label>
+                    <div class="textbox-align">
+                        <textarea id="dislike" name="dislike" rows=5 cols="50" minlength="10" maxlength="500"></textarea>
+                        <span class="error_message hidden" id="dislikeError">*Please submit a response with 10 to 500 characters in length.
+                        </span>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <label for="suggestions" class="bold align-text">Any suggestions for next year?</label>
+                    <div class="textbox-align">
+                        <textarea id="suggestions" name="suggestions" rows=5 cols="50" minlength="10" maxlength="500"></textarea>
+                        <span class="error_message hidden" id="suggestionsError">*Please submit a response with 10 to 500 characters in length.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <label class="bold">Would you like to receive emails about future downtown Ithaca events?*</label>
+            <div class="future-emails">
+                <div class="email-radio">
+                    <input type="radio" id="yes" name="radio">
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="email-radio">
+                    <input type="radio" id="no" name="radio" checked>
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
     </main>
     <footer>

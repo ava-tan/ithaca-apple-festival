@@ -12,7 +12,7 @@ The site's target audience are first-year Cornell students who are attending the
 ### Planning & Designing for User Input (Milestone 1)
 > Determine what purpose the form for your site will accomplish, where it will go (physical placement on page and the HTML file name), and what form components you plan on using.
 
-Purpose: The purpose of my form for my site will be to allow first-time visitors to give feedback on the festival and share their comments about the festival as well as opt in to potential further emails about updates on other downtown Ithaca events. 
+Purpose: The purpose of my form for my site will be to allow first-time visitors to give feedback on the festival and share their comments about the festival as well as opt in to potential further emails about updates on other downtown Ithaca events.
 
 
 Location: The form will be located at the bottom of the home page after all of the main content.
@@ -63,11 +63,11 @@ My form will use a POST method because the user should only submit the form once
 - What did you like?:
   - reasoning: This field is optional because this input is to allow the user to expand and include specific feedback. Maximum length of 500 characters to ensure brevity.
   - required/optional: optional
-  - constraints: `max-length= 500`
+  - constraints: `maxlength= "500"`
 - What did you dislike?:
   - reasoning: This field is optional because the user does not need to include things they disliked, and they may even have not disliked anything about the festival. Maximum length of 500 characters ensures brevity.
   - required/optional: optional
-  - constraints: `max-length= 500`
+  - constraints: `maxlength= "500"`
 - Opt in for emails:
   - reasoning: This field is required because it is a yes or no question and the user must opt in or out of future emails.
   - required/optional: `required`
@@ -98,6 +98,7 @@ Task: Opt in to receive future emails to learn about downtown Ithaca events usin
 > Using your notes from above, describe your user 1 by answering the questions below.
 
 1. Who is your user 1, e.g., where user 1 comes from, what is your user 1’s job, characteristics, etc.?
+
 User 1 is a first-year Cornell student studying Mechanical Engineering in the College of Engineering. She is from New Jersey. She enjoys watching Netflix shows during her free time but spends most of her time either in the library or in her dorm doing work. She likes to go out on the weekends, especially to eat food in Collegetown.
 
 2. Does your user 1 belong to your target audience of the site? (**Yes** / No)
@@ -131,6 +132,7 @@ User 1 is a first-year Cornell student studying Mechanical Engineering in the Co
 > Using your notes from above, describe your user 2 by answering the questions below.
 
 1. Who is your user 2, e.g., where user 2 comes from, what is your user 2’s job, characteristics, etc.?
+
 My user is a first-year Cornell student studying CS in the College of Engineering. She is from Long Island. She is very interested in photography and visual design as well as environmentalism. Throughout the week, she is usually studying in either the library or her dorm. She likes to go out on the weekends with her friends in Collegetown or stays in to watch a movie with her suite.
 
 2. Does your user 2 belong to your target audience of the site? (**Yes** / No)
@@ -170,30 +172,54 @@ I decided to add an additional suggestion multi-line text box to the form, which
 
 ## Polished & Tested Form
 
+Desktop with Feedback
+![Final Form Desktop with Feedback](finalformdesktop.png)
+Mobile with Feedback
+![Final Form Mobile with Feedback](finalformmobile.png)
+
 ###  Plan Validation Pseudocode (Final Submission)
 > Write your form validation pseudocode here.
 
-```
-  TODO
-```
+When the user tries to submit the form:  
+    If the name HTML5 validation criteria has not been met:  
+        Show the feedback message, "Must enter a valid name."  
+        Do not submit the form.  
+    If the email HTML5 validation criteria has not been met:  
+        Show the feedback message, "Must enter a valid email address."  
+        Do not submit the form.  
+    If the days attended HTML5 validation criteria has not been met:  
+        Show the feedback message, "Must check at least one box."
+        Do not submit the form.  
+    If the rate your time at the festival HTML5 validation criteria has not been met:  
+        Show the feedback message, "Must select one option."
+        Do not submit the form.  
+    If the future emails HTML5 validation criteria has not been met:  
+        Show the feedback message, "Must select one option."
+        Do not submit the form.
+    Otherwise,  
+        Show no feedback message.  
+        Submit the form to the server.
 
 ### User Testing Plan (Final Submission)
 > This should probably be the same task from your first round of testing unless you have a reason to change it.
 
-Task:
+Task: Opt in to receive future emails to learn about downtown Ithaca events using the email user1@gmail.com.
 
 
 ### User 3 - Testing Notes (Final Submission)
 > When conducting user testing, you should take notes during the test. Place your notes here.
 
+![User 3 Notes](user3notes.jpg)
 
 ### User 3 (Final Submission)
 > Using your notes from above, describe your user 3 by answering the questions below.
 
 1. Who is your user 3, e.g., where user 3 comes from, what is your user 3’s job, characteristics, etc.?
 
+User 3 is a first-year Cornell student studying English in the College of Arts and Sciences. She enjoys watching films in her free time and enjoys going to the Ithaca Farmers Market on the weekends. She usually spends her time either in her dorm writing essays or at Green Dragon ordering her favorite drink. She likes to explore local craft shops and find new art pieces to add to her collection.
 
-2. Does your user 3 belong to your target audience of the site? (Yes / No)
+
+2. Does your user 3 belong to your target audience of the site? (**Yes** / No)
 
 > If “No”, what’s your strategy of associating the user test results to your target audience’s needs and wants? How can your re-design choices based on the user tests make a better fit for the target audience?
 
@@ -202,30 +228,32 @@ Task:
 > Report the results of your user 3 evaluation. You should explain **what the user did**, describe the user's **reaction/feedback** to the design, **reflect on the user's performance**, determine what **re-design choices** you will make. You can also add any additional comments. See the example design journey for an example of what this would look like.
 
 - **Did you evaluate the desktop or mobile design?**
-  - Pick one: desktop/mobile
+  - Pick one: **desktop**/mobile
 - **How did the user do? Did they meet your expectation?**
-  - TODO
+  - The user quickly and succesflly inputted the correct email address in the right field and changed the radio button from no to yes. This took about 30 seconds in total, which was expected.
 - **User’s reaction / feedback to the design** (e.g., specific problems or issues found in the tasks)
-  - TODO
+  - The user noted that the form was easy to read and did not specify any issues with it.
 - **Your reflections about the user’s performance to the task**
-  - TODO
+  - I am glad that the user was able to perform the task easily and that the form was logically designed.
 - **Re-design choices**
-  - TODO
+  - None
 - **Additional Notes**
-  - TODO: Justify your decisions; additional notes.
+  - N/A
 
 
 ### User 4 - Testing Notes (Final Submission)
 > When conducting user testing, you should take notes during the test. Place your notes here.
 
+![User 4 Notes](user4notes.jpg)
 
 ### User 4 (Final Submission)
 > Using your notes from above, describe your user 4 by answering the questions below.
 
 1. Who is your user 4, e.g., where user 4 comes from, what is your user 4’s job, characteristics, etc.?
 
+User 4 is a first-year Cornell student who is studying statistics in the College of Arts and sciences. He is from New York City. User 4's favorite pastime is going to Bear Necessities and spending his Big Red Bucks on a variety of snacks. He enjoys listening to new music and is often found with headphones on. He usually spends his time eating meals with his friends or simply relaxing in his dorm.
 
-2. Does your user 4 belong to your target audience of the site? (Yes / No)
+2. Does your user 4 belong to your target audience of the site? (**Yes** / No)
 
 > If “No”, what’s your strategy of associating the user test results to your target audience’s needs and wants? How can your re-design choices based on the user tests make a better fit for the target audience?
 
@@ -234,22 +262,23 @@ Task:
 > Report the results of your user 4 evaluation. You should explain **what the user did**, describe the user's **reaction/feedback** to the design, **reflect on the user's performance**, determine what **re-design choices** you will make. You can also add any additional comments. See the example design journey for an example of what this would look like.
 
 - **Did you evaluate the desktop or mobile design?**
-  - Pick one: desktop/mobile
+  - Pick one: desktop/**mobile**
 - **How did the user do? Did they meet your expectation?**
-  - TODO
+  - The user immediately navigated to the email field and inputed the correct email in about 15s, which was expected. He also quickly changed the radio button from no to yes.
 - **User’s reaction / feedback to the design** (e.g., specific problems or issues found in the tasks)
-  - TODO
+  - The user did not specify any problems or issues with the design of the form.
 - **Your reflections about the user’s performance to the task**
-  - TODO
+  - I'm glad that the user was able to quickly and easily navigate to the correct fields and choose the correct options to complete the task.
 - **Re-design choices**
-  - TODO
+  - None
 - **Additional Notes**
-  - TODO: Justify your decisions; additional notes.
+  - N/A
 
 
 ### Design Changes (Final Submission)
 > Use the space provided here to document any design changes from testing.
 
+Despite there not being any specific issues with the form that arose during user testing, I realized that the radio button feedback was redundant due to the fact that one radio button is always checked by default. So, I removed the feedback for the radio buttons. Also, I added feedback for the optional large text areas, enforcing that the length of the response if the user does give a response must be between 10 and 500 characters, which ensures that the response given is valid and not just a couple of words/characters.
 
 ### Additional Design Justifications (Final Submission)
 > If you feel like you haven’t fully explained your design choices in the final submission, or you want to explain some functions in your site (e.g., if you feel like you make a special design choice which might not meet the final requirement), you can use the additional design justifications to justify your design choices. Remember, this is place for you to justify your design choices which you haven’t covered in the design journey. Use it wisely. However, you don’t need to fill out this section if you think all design choices have been well explained in the final submission design journey.
@@ -258,5 +287,6 @@ Task:
 ### Self-Reflection (Final Submission)
 > This was the first project in this class where you coded some JavaScript. What did you learn from this experience?
 
+I learned how to carefully go through my code and debug the code since there were many issues with my JavaScript at the beginning. When coding, it is important to slowly implement it step by step in order to make sure that issues can be found easily.
 
 > Take some time here to reflect on how much you've learned since you started this class. It's often easy to ignore our own progress. Take a moment and think about your accomplishments in this class. Hopefully you'll recognize that you've accomplished a lot and that you should be very proud of those accomplishments!
